@@ -1,0 +1,19 @@
+﻿@model List<Vidly.Models.Movie>
+
+@{ 
+ViewBag.Title = "Index";
+Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+         
+    <h2>List Of Movies</h2>
+
+    @foreach (var movie in Model)
+    {
+    <p>@movie.Id </p>
+    <p>@movie.Name</p>
+    <p>@movie.GenreId</p>
+    <p>@movie.DateOfRelease</p>
+    }
+
+        <p>------------------------</p>
